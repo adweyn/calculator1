@@ -2,38 +2,58 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     color: #212121;
 }
-
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Секція Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
-    background-color: #fff;
+    background-color: #ebebeb;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.btn_box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .login-btn{
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 12px 30px 12px 30px;
-    background: white;
-    border: 1px solid black;
+    background: #ffffff;
+    border: 1px white solid;
+    color: black;
     transition: all;
+    text-decoration: none;
+    transition: border-color 0.3s;    
 }
-.login-btn:hover {
-    transition: 0.3s ;
-    background: orange;
+.login-btn:hover{
+    border-color: #2196f3;
 }
 .register-btn{
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 12px 30px 12px 30px;
     background: #2196f3;
     border: none;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.register-btn:hover{
+    background-color: #1f9affb6;
+}
+.logo{
+    font-size: 30px;
 }
 .navbar .logo {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
     font-weight: 700;
     color: #2196f3;
 }
@@ -59,8 +79,7 @@ body {
 /* Секція Hero */
 .hero-section {
     display: flex;
-    justify-content: center;
-    gap: 30%;
+    justify-content: space-around;
     align-items: center;
     padding: 60px 80px;
 }
@@ -69,7 +88,7 @@ body {
     max-width: 500px;
 }
 
-.hero-text h1 {
+.hero-h1{
     font-size: 50px;
     font-weight: 700;
     color: #212121;
@@ -77,14 +96,14 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.hero-text p {
+.hero-p {
     font-size: 20px;
     font-weight: 400;
     color: #757575;
     font-family: "Mulish", sans-serif;
 }
 
-.hero-image {
+.hero-img {
     max-width: 500px;
 }
 
@@ -96,7 +115,7 @@ body {
 .btn-primary {
     background-color: #458FF6;
     color: #ffffff;
-    border: 1px solid #458FF6;
+    border: none;
     padding: 15px 34px;
     font-size: 16px;
     font-weight: 700;
@@ -104,74 +123,42 @@ body {
     text-decoration: none;
     display: inline-block;
     font-family: "Poppins", sans-serif;
+    transition: all 0.3s;
 }
-
+.btn-primary:hover{
+    background-color: #1f9affb6;
+}
 /* Секція послуг */
 .services-section {
     padding: 60px 80px;
     text-align: center;
     background-color: #f9f9f9;
+    background: url(src/images/bg\ element.png)no-repeat;
 }
-
-.services-section h2 {
+.hr{
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+.services-h2 {
     font-size: 32px;
     font-weight: 700;
     color: #212121;
+    font-family: poppins;
 }
 
 .services-intro {
     font-size: 16px;
     color: #757575;
     margin-bottom: 40px;
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 15%);
-    column-gap: 30px;
-    row-gap: 30px;
-    justify-content: center;
-}
-
-.service-card {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    height: 300px;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-}
-
-.service-card img {
-    position: relative;
-    right: 90px;
-    top: 40px;
-}
-
-.service-card h3 {
-    font-size: 20px;
-    font-weight: 700;
-    color: #212121;
-    padding-top: 20%;
-    padding-left: 5%;
-    line-height: 10px;
-    text-align: start;
-}
-
-.service-card p {
-    font-size: 20px;
-    color: #757575;
-    display: flex;
-    text-align: start;
-    width: 250px;
-    padding-left: 5%;
+    font-family: mulish ;
 }
 
 /* Інформаційна секція */
@@ -189,7 +176,6 @@ body {
     align-items: center;
     text-align: center;
     margin-bottom: 40px;
-    gap: 20%;
     /* Відстань між текстом та зображенням */
     width: 100%;
     /* Зробити блоки ширшими на малих екранах */
@@ -243,13 +229,13 @@ body {
 
 /* Стиль активного елемента (Home) */
 .nav-menu li a.active {
-    color: black;
+    color: #2196f3;
     /* Чорний колір для активного елемента */
 }
 
 /* Анімація при наведенні на елементи меню */
 .nav-menu li a {
-    color: #212121;
+    color: #2196f3;
     /* Початковий колір */
     transition: color 0.3s ease;
     /* Анімація зміни кольору */
@@ -257,7 +243,7 @@ body {
 
 /* Анімація опускання при наведенні */
 .nav-menu li:hover a {
-    color: black;
+    color: #2196f3;
     /* Чорний колір при наведенні */
 }
 
@@ -272,9 +258,10 @@ body {
     /* Вирівнювання зліва */
     right: 0;
     /* Вирівнювання справа */
-    height: 2px;
+    top: 25px;
+    height: 3px;
     /* Висота лінії */
-    background-color: black;
+    background-color: #2196f3;
     /* Колір лінії */
     transform: scaleX(0);
     /* Початковий стан (не видимий) */
@@ -343,7 +330,52 @@ body {
 .nav-menu.active {
     display: flex;
 }
+@media(max-width:1500px){
+    .hero-img{
+        max-width: 400px;
+    }
+}
+@media (max-width: 1200px) {
+    .navbar ul li a {
+        font-size: 15px;
+    }
 
+    .logo {
+        font-size: 25px;
+    }
+
+    .hero-img {
+        max-width: 300px;
+    }
+
+    .hero-h1 {
+        font-size: 30px;
+    }
+
+    .hero-p {
+        font-size: 18px;
+        width: 400px;
+    }
+}
+
+
+@media(max-width: 1000px) {
+    .navbar ul li a {
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .login-btn {
+        padding: 8px 25px 8px 25px;
+    }
+
+    .register-btn {
+        padding: 8px 20px 8px 20px;
+    }
+}
 /* Відображення бургер-меню на малих пристроях */
 @media (max-width: 768px) {
     .navbar ul {
@@ -409,30 +441,29 @@ body {
 
 /* Hero Section - адаптивність */
 @media (max-width: 768px) {
-    .navbar{
-        gap: 30%;
-    }
-    .hero-text h1 {
-        font-size: 10px;
+    
+    .hero-h1{
+        font-size: 20px;
         text-align: left;
         width: 340px;
         color: #212121;
         font-family: "Poppins", sans-serif;
     }
     
-    .hero-text p {
-        font-size: 20px;
+    .hero-p {
+        font-size: 15px;
         font-weight: 400;
         text-align: left;
         color: #757575;
         font-family: "Mulish", sans-serif;
+        width: 300px;
     }
     .btn-primary{
-        margin-right: 150px;        
+        padding: 10px 22px 10px 22px;
+        font-size: 14px;
     }
     .hero-section {
         flex-direction: column;
-        text-align: center;
     }
 
     .hero-image {
@@ -443,23 +474,14 @@ body {
         padding: 20px;
     }
 
-    .hero-text h1 {
-        font-size: 36px;
-    }
+   
 }
-
+.logo{
+    text-decoration: none;
+}
 /* Services Section - адаптивність */
-@media (max-width: 768px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-@media (max-width: 480px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-}
+
 
 /* Info Section - адаптивність */
 @media (max-width: 600px) {
@@ -467,3 +489,4 @@ body {
         margin-bottom: 30px;
     }
 }
+

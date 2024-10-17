@@ -30,7 +30,9 @@
   <body>
     <header>
       <div class="navbar">
-        <div class="logo">HealthMonitor</div>
+        <div>
+          <a href="#" class="logo">HealthMonitor</a>
+        </div>
         <div class="burger" onclick="toggleMenu()">
           &#9776;
           <!-- Символ бургер-меню -->
@@ -41,8 +43,10 @@
           <li><a href="#apps">Apps</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#about-us">About us</a></li>
-          <button class="login-btn" id="loginBtn">Login</button>
-          <button class="register-btn" id="registerBtn">Register</button>
+          <div class="btn_box">
+            <a href="#" class="login-btn" id="loginBtn">Login</a>
+            <a href="#" class="register-btn" id="registerBtn">Register</a>
+          </div>
         </ul>
       </div>
     </header>
@@ -50,8 +54,8 @@
     <main>
       <section class="hero-section">
         <div class="hero-text">
-          <h1>Virtual healthcare for you</h1>
-          <p>
+          <h1 class="hero-h1">Virtual healthcare for you</h1>
+          <p class="hero-p">
             Trafalgar provides progressive, and affordable healthcare,
             accessible on mobile and online for everyone.
           </p>
@@ -59,6 +63,7 @@
         </div>
         <div class="hero-image">
           <img
+            class="hero-img"
             src="/src/images/healthcare-image.png"
             alt="Healthcare illustration"
           />
@@ -66,13 +71,16 @@
       </section>
       <section class="services-section">
         <div class="container">
-          <h2>Our services</h2>
-          <p class="services-intro">
-            We provide to you the best choices for you. Adjust it to your health
-            needs and make sure your treatment is with highly qualified doctors.
-            You can consult with us about which type of service is suitable for
-            your health.
-          </p>
+          <div style="display: flex; justify-content: center; flex-direction: column;align-items: center;">
+            <h2 class="services-h2">Our services</h2>
+            <div class="hr"></div>
+            <p class="services-intro">
+              We provide to you the best choices for you. Adjust it to your
+              health needs and make sure your treatment is with highly qualified
+              doctors. You can consult with us about which type of service is
+              suitable for your health.
+            </p>
+          </div>
           <div class="services-grid">
             <div class="service-card">
               <img src="src/images/Frame.png" alt="Search doctor" />
