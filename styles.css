@@ -1,0 +1,454 @@
+/* Основні стилі сторінки */
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+    color: #212121;
+}
+
+/* Секція Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 55%;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #fff;
+}
+
+.navbar .logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #2196f3;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar ul li {
+    font-size: 22px;
+    columns: #1F1534;
+    font-weight: 100;
+    font-family: "Mulish", sans-serif;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #1F1534;
+}
+
+/* Секція Hero */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+    align-items: center;
+    padding: 60px 80px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #212121;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-text p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #757575;
+    font-family: "Mulish", sans-serif;
+}
+
+.hero-image {
+    max-width: 500px;
+}
+
+.hero-image img {
+    width: 130%;
+}
+
+/* Основна кнопка */
+.btn-primary {
+    background-color: #458FF6;
+    color: #ffffff;
+    border: 1px solid #458FF6;
+    padding: 15px 34px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Секція послуг */
+.services-section {
+    padding: 60px 80px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.services-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #212121;
+}
+
+.services-intro {
+    font-size: 16px;
+    color: #757575;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 15%);
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    height: 300px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    position: relative;
+    right: 90px;
+    top: 40px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #212121;
+    padding-top: 20%;
+    padding-left: 5%;
+    line-height: 10px;
+    text-align: start;
+}
+
+.service-card p {
+    font-size: 20px;
+    color: #757575;
+    display: flex;
+    text-align: start;
+    width: 250px;
+    padding-left: 5%;
+}
+
+/* Інформаційна секція */
+.info-section {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    /* Додано для адаптивності */
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    gap: 20%;
+    /* Відстань між текстом та зображенням */
+    width: 100%;
+    /* Зробити блоки ширшими на малих екранах */
+}
+
+.info-image {
+    flex: 1;
+    /* Додати гнучкість для зображення */
+}
+
+/* Сховати зображення на малих пристроях */
+@media (max-width: 768px) {
+    .info-image img {
+        display: none;
+        /* Сховати зображення */
+    }
+
+    .info-block {
+        flex-direction: column;
+        /* Вертикальне розташування тексту */
+        align-items: center;
+        /* Центрування тексту */
+    }
+
+    .info-text {
+        margin-top: 20px;
+        /* Відступ між текстом та верхнім краєм */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Стилі для навігаційного меню */
+.nav-menu li {
+    position: relative;
+    /* Позиціювання для псевдоелемента */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Стиль активного елемента (Home) */
+.nav-menu li a.active {
+    color: black;
+    /* Чорний колір для активного елемента */
+}
+
+/* Анімація при наведенні на елементи меню */
+.nav-menu li a {
+    color: #212121;
+    /* Початковий колір */
+    transition: color 0.3s ease;
+    /* Анімація зміни кольору */
+}
+
+/* Анімація опускання при наведенні */
+.nav-menu li:hover a {
+    color: black;
+    /* Чорний колір при наведенні */
+}
+
+.nav-menu li::after {
+    content: '';
+    /* Псевдоелемент для анімації */
+    position: absolute;
+    /* Абсолютне позиціонування */
+    bottom: 0;
+    /* Вирівнювання знизу */
+    left: 0;
+    /* Вирівнювання зліва */
+    right: 0;
+    /* Вирівнювання справа */
+    height: 2px;
+    /* Висота лінії */
+    background-color: black;
+    /* Колір лінії */
+    transform: scaleX(0);
+    /* Початковий стан (не видимий) */
+    transition: transform 0.3s ease;
+    /* Анімація появи */
+}
+
+/* Анімація лінії при наведенні */
+.nav-menu li:hover::after {
+    transform: scaleX(1);
+    /* Лінія з'являється при наведенні */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Бургер-меню */
+.burger {
+    display: none;
+    /* Сховати бургер-меню за замовчуванням */
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Сховати навігаційне меню за замовчуванням на малих екранах */
+.nav-menu {
+    display: flex;
+    /* Показати меню на великих екранах */
+    list-style: none;
+    padding: 0;
+    /* Прибрати відступи */
+    margin: 0;
+    /* Прибрати маргін */
+}
+
+/* Показати навігаційне меню при відкритті */
+.nav-menu.active {
+    display: flex;
+}
+
+/* Відображення бургер-меню на малих пристроях */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        /* Сховати основне меню */
+    }
+
+    .burger {
+        display: block;
+        /* Показати бургер-меню */
+    }
+
+    /* Показати навігаційне меню в бургер-меню */
+    .nav-menu {
+        flex-direction: column;
+        /* Вертикальне розташування */
+        position: absolute;
+        /* Абсолютне позиціонування */
+        background-color: white;
+        /* Фон меню */
+        top: 70px;
+        /* Відступ, щоб меню не перекривало navbar */
+        left: 0;
+        /* Вирівняти ліворуч */
+        right: 0;
+        /* Вирівняти праворуч */
+        z-index: 10;
+    }
+
+    /* Сховати зображення на малих пристроях */
+    .hero-image img,
+    .info-image img {
+        display: none;
+        /* Сховати зображення */
+    }
+}
+
+/* Для відображення меню на малих пристроях, коли воно активне */
+@media (max-width: 768px) {
+    .nav-menu.active {
+        display: flex;
+        /* Показати меню */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Адаптивні стилі для мобільних пристроїв */
+
+/* Hero Section - адаптивність */
+@media (max-width: 768px) {
+    .navbar{
+        gap: 30%;
+    }
+    .hero-text h1 {
+        font-size: 10px;
+        text-align: left;
+        width: 340px;
+        color: #212121;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    .hero-text p {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        color: #757575;
+        font-family: "Mulish", sans-serif;
+    }
+    .btn-primary{
+        margin-right: 150px;        
+    }
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+}
+
+/* Services Section - адаптивність */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Info Section - адаптивність */
+@media (max-width: 600px) {
+    .info-block {
+        margin-bottom: 30px;
+    }
+}
