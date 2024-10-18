@@ -5,11 +5,13 @@ body {
     background-color: #f9f9f9;
     color: #212121;
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* Секція Navbar */
 .navbar {
     display: flex;
@@ -19,12 +21,14 @@ body {
     background-color: #ebebeb;
     border-bottom: 1px solid rgb(206, 206, 206);
 }
-.btn_box{
+
+.btn_box {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.login-btn{
+
+.login-btn {
     border-radius: 10px;
     padding: 12px 30px 12px 30px;
     background: #ffffff;
@@ -32,12 +36,14 @@ body {
     color: black;
     transition: all;
     text-decoration: none;
-    transition: border-color 0.3s;    
+    transition: border-color 0.3s;
 }
-.login-btn:hover{
+
+.login-btn:hover {
     border-color: #2196f3;
 }
-.register-btn{
+
+.register-btn {
     border-radius: 10px;
     padding: 12px 30px 12px 30px;
     background: #2196f3;
@@ -46,12 +52,15 @@ body {
     text-decoration: none;
     transition: background-color 0.3s;
 }
-.register-btn:hover{
+
+.register-btn:hover {
     background-color: #1f9affb6;
 }
-.logo{
+
+.logo {
     font-size: 30px;
 }
+
 .navbar .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -83,7 +92,8 @@ body {
     align-items: center;
     padding: 60px 80px;
 }
-.hero-h11{
+
+.hero-h11 {
     font-size: 50px;
     font-weight: 700;
     color: #212121;
@@ -91,14 +101,16 @@ body {
     font-family: "Poppins", sans-serif;
     text-align: right;
 }
-.hero-p1{
+
+.hero-p1 {
     font-size: 20px;
     font-weight: 400;
     color: #757575;
     font-family: "Mulish", sans-serif;
     text-align: right;
 }
-.btn-primary4{
+
+.btn-primary4 {
     background-color: #458FF6;
     color: #ffffff;
     border: none;
@@ -115,14 +127,14 @@ body {
     position: relative;
     left: 344px;
 }
-.hero-text1{
-    
-}
+
+.hero-text1 {}
+
 .hero-text {
     max-width: 500px;
 }
 
-.hero-h1{
+.hero-h1 {
     font-size: 50px;
     font-weight: 700;
     color: #212121;
@@ -159,6 +171,7 @@ body {
     font-family: "Poppins", sans-serif;
     transition: all 0.3s;
 }
+
 .btn-primary1 {
     color: #458FF6;
     border: 1px solid #458FF6;
@@ -172,13 +185,16 @@ body {
     transition: all 0.3s;
     margin-top: 100px;
 }
+
 .btn-primary1:hover {
     background-color: #1f9aff;
     color: white;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: #1f9affb6;
 }
+
 /* Секція послуг */
 .services-section {
     padding: 60px 80px;
@@ -194,20 +210,23 @@ body {
     height: 100%;
     object-fit: contain;
 }
+
 .service-img {
     width: 90px;
     height: 90px;
     display: flex;
     text-align: center;
 }
-.service-card h3{
+
+.service-card h3 {
     font-family: poppins;
     font-size: 24px;
     text-align: left;
     padding-top: 20px;
     margin-bottom: 0;
 }
-.service-card p{
+
+.service-card p {
     font-family: mulish;
     font-size: 16px;
     font-weight: 100;
@@ -215,11 +234,12 @@ body {
     margin-top: 10px;
     line-height: 25px;
 }
-.service-card{
+
+.service-card {
     display: flex;
     flex-direction: column;
     background: white;
-    border-radius:25px;
+    border-radius: 25px;
     height: 264px;
     width: 280px;
     background-color: #ffffff;
@@ -227,17 +247,20 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
+
 .service-card:hover {
     transform: translateY(-10px);
 }
-.hr{
+
+.hr {
     width: 50px;
     height: 2px;
     background-color: black;
     border-radius: 70px;
     margin-bottom: 15px;
-    
+
 }
+
 .services-h2 {
     font-size: 32px;
     font-weight: 700;
@@ -252,13 +275,14 @@ body {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    font-family: mulish ;
+    font-family: mulish;
 }
-.services-grid{
+
+.services-grid {
     display: grid;
-    grid-template-columns: repeat(3,320px);
+    grid-template-columns: repeat(3, 320px);
     gap: 30px;
-    
+
 }
 
 
@@ -278,219 +302,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-.articles{
-    justify-content: center;
-}
-.articles-h1{
-    font-family: poppins;
-    font-size: 36px;
-}
-.articles-cards{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-.articles-img img{
-    min-width: 390px;
-    display: flex;
-    position: relative;
-    bottom: 20px;
-    align-items: flex-start;
-}
-.articles-heading{
-    display: flex;
-    justify-content: center;
-}
-.articles-img {
-    display: flex;
-    justify-content: center;
-}
-.articles-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.articles-card-text-h1{
-    font-family: poppins;
-    font-size: 21px;
-    margin-left: 15px;
-    width: 274px;
-}
-.articles-card-text-p{
-    font-family: "Mulish";
-    font-size: 16px;
-    font-weight: 100;
-    width: 266px;
-    margin-left: 15px;
-    margin-top: 30px;
-}
-.articles-card-a{
-    font-size: 17px;
-    font-family: mulish;
-    color: #1f9aff;
-    display:flex;
-    gap: 10px;
-    text-decoration: none;
-    margin-left: 15px;
-    margin-top: 10px;
-}
-.articles-card-link svg{
-    fill: #1f9aff;
-    width: 20px;
-    height: 20px;
-}
-.articles-card-link{
-    display: flex;
-    height: 20px;
-    gap: 20px;
-}
-.articles-text{
-}
-.articles-card{
-    display: flex;
-    flex-direction: column;
-    background: white;
-    border-radius: 25px;
-    height: 470px;
-    width: 350px;
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    
-}
-.hr{
-    margin-top: 20px;
-}
-.articles-h1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-
-.articles-card:hover{
-    transform: translateY(-10px);
-}
-
-
-
-.article-btn-box{
-    display: flex;
-    justify-content: center;
-}
-.article-btn{
-    color: #458FF6;
-    border: 1px solid #458FF6;
-    padding: 15px 34px;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 30px;
-    text-decoration: none;
-    display: inline-block;
-    font-family: "Poppins", sans-serif;
-    transition: all 0.3s;
-    margin-top: 120px;
-    margin-bottom: 200px;
-}
-.article-btn:hover{
-    background-color: #1f9aff;
-    color: white;
-}
-
-
-.logo1{
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 24px;
-
-}
-
-.footer{
-    background: linear-gradient(211.68deg, rgb(103, 195, 243) 8.549%, rgb(90, 152, 242) 70.494%);
-    /* bg */
-    width: 100%;
-    height: 432px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.footer-p1{
-    width: 391px;
-    color: rgb(255, 255, 255);
-    font-family: Mulish;
-    font-size: 18px;
-    font-weight: 100;
-    line-height: 28px;
-    letter-spacing: 0%;
-    text-align: left;
-}
-.footer-p{
-    color: rgb(255, 255, 255);
-    font-family: Mulish;
-    font-size: 18px;
-    font-weight: 100;
-    line-height: 28px;
-    letter-spacing: 0%;
-    text-align: left;
-    
-    /* Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone */
-    
-    
-}
-.footer-p3{
-    color: rgb(255, 255, 255);
-    font-family: Mulish;
-    font-size: 18px;
-    font-weight: 100;
-    line-height: 28px;
-    letter-spacing: 0%;
-    text-align: left;
-}
-.about{
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 24px;
-}
-
-.where{
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 24px;
-}
-
-.contacts{
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 24px;
-}
-.footer-box{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-}
-
 /* Сховати зображення на малих пристроях */
-@media (max-width: 768px) {
-    
-
-    
-}
+@media (max-width: 768px) {}
 
 
 
@@ -608,32 +421,13 @@ body {
 .nav-menu.active {
     display: flex;
 }
-@media(max-width:1500px){
-    .hero-img{
+
+@media(max-width:1500px) {
+    .hero-img {
         max-width: 400px;
     }
 }
-@media (max-width: 1400px) {
-    .articles-cards{
-        flex-direction: column;
-    }
-    .footer-box{
-        display: grid;
-        grid-template-columns: repeat(2, 300px);
-    }
-    .footer{
-        height: 600px;
-    }
-    .footer-p{
-        width: 200px;
-    }
-    .contact{
-        width: 200px;
-    }
-    .about-us{
-        width: 150px;
-    }
-}
+
 @media (max-width: 1200px) {
     .navbar ul li a {
         font-size: 15px;
@@ -655,13 +449,16 @@ body {
         font-size: 18px;
         width: 400px;
     }
-    .services-grid{
+
+    .services-grid {
         grid-template-columns: repeat(2, 320px);
     }
-    .services-intro{
+
+    .services-intro {
         width: 600px;
     }
-    .container{
+
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -686,27 +483,14 @@ body {
         padding: 8px 20px 8px 20px;
     }
 }
+
 /* Відображення бургер-меню на малих пристроях */
 @media (max-width: 768px) {
     .navbar ul {
         display: none;
         /* Сховати основне меню */
     }
-    .footer-box {
-        display: grid;
-        grid-template-columns: repeat(1, 300px);
-    }
-    .articles-card{
-        width: 300px;
-    }
-    .articles-img {
-        display: block;
-        max-width: 100px;
 
-    }
-    .footer{
-        height: 1100px;
-    }
     .burger {
         display: block;
         /* Показати бургер-меню */
@@ -761,165 +545,106 @@ body {
 
 
 
-/* Адаптивні стилі для мобільних пристроїв */
-
-/* Hero Section - адаптивність */
-@media (max-width: 768px) {
-    
-    .hero-h1{
-        font-size: 20px;
-        text-align: left;
-        width: 340px;
-        color: #212121;
-        font-family: "Poppins", sans-serif;
-    }
-    
-    .hero-p {
-        font-size: 15px;
-        font-weight: 400;
-        text-align: left;
-        color: #757575;
-        font-family: "Mulish", sans-serif;
-        width: 300px;
-    }
-    .btn-primary{
-        padding: 10px 22px 10px 22px;
-        font-size: 14px;
-    }
-    .hero-section {
-        flex-direction: column;
-    }
-
-    .hero-image {
-        margin-top: 30px;
-    }
-
-    .navbar {
-        padding: 20px;
-    }
-
-
-    .services-h2{
-        font-size: 22px;
-    }
-    .hr{
-        width: 40px;
-    }
-    .services-grid {
-        grid-template-columns: repeat(1, 320px);
-        width: 240px;;
-        
-    }
-
-    .services-intro {
-        width: 300px;
-        font-size: 13px;
-    }
-    .service-card{
-        width: 200px;
-        height: 200px;
-    }
-    .service-card h3{
-        font-size: 18px;
-    }
-    .service-card p{
-        font-size: 13px;
-    }
-    .service-card img{
-        width: 50px;
-        height: 50px;
-    }
-   
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-   
-}
-.logo{
-    text-decoration: none;
-}
-/* Services Section - адаптивність */
 
 
 
-/* Info Section - адаптивність */
-@media (max-width: 600px) {
-    .info-block {
-        margin-bottom: 30px;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Стили для модального вікна */
-.modal {
-    display: none;
-    /* Спочатку сховане */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
+.form-wrapper {
     background-color: #fff;
-    margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 300px;
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
 }
