@@ -686,6 +686,7 @@ body {
         padding: 8px 20px 8px 20px;
     }
 }
+
 /* Відображення бургер-меню на малих пристроях */
 @media (max-width: 768px) {
     .navbar ul {
@@ -922,4 +923,82 @@ body {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+@media (max-width: 768px) {
+    .articles-cards {
+        flex-direction: column;
+        /* Змінюємо вирівнювання карток на вертикальне */
+        align-items: center;
+        /* Центруємо картки */
+        gap: 30px;
+        /* Відстань між картками */
+    }
+
+    .articles-card {
+        width: 290px;
+        /* Ширина картки займатиме 100% */
+        max-width: 300px;
+        /* Максимальна ширина для карток на мобільних */
+    }
+
+    .articles-img img {
+        width: 100%;
+        /* Ширина зображень під мобільні екрани */
+        height: auto;
+        /* Зберігаємо пропорції зображення */
+    }
+
+    .articles-card-text-h1 {
+        font-size: 18px;
+        /* Менший розмір заголовку для мобільних */
+    }
+
+    .articles-card-text-p {
+        font-size: 14px;
+        /* Зменшений розмір тексту опису */
+    }
+
+    .article-btn {
+        margin-top: 40px;
+        /* Зменшити відстань до кнопки */
+    }
+        .articles-img img {
+            width: 100%;
+            /* Зображення займає всю ширину контейнера */
+            height: 200px;
+            /* Зберігаємо пропорції зображення */
+            object-fit: cover;
+            /* Забезпечує гарне обрізання зображення без викривлень */
+            border-radius: 10px 10px 0 0;
+            /* Заокруглюємо верхні кути */
+            position: relative;
+            right: 40px;
+        }
+    
+        .articles-card {
+            max-width: 300px;
+            /* Встановлюємо максимальну ширину картки */
+            margin: 0 auto;
+            height: 400px;
+            /* Центруємо картку на сторінці */
+            border-radius: 10px;
+            /* Заокруглюємо кути картки */
+            overflow: hidden;
+            /* Обрізаємо вміст за межами картки */
+        }
+    
+        .articles-card-text-h1 {
+            font-size: 20px;
+            /* Оптимальний розмір заголовка */
+        }
+    
+        .articles-card-text-p {
+            font-size: 16px;
+            /* Оптимальний розмір тексту опису */
+        }
+                
+        
+        .footer-p1{
+            width: 310px;
+        }
 }
