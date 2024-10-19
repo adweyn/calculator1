@@ -1001,4 +1001,7 @@ body {
         .footer-p1{
             width: 310px;
         }
+        .articles-h1{
+            font-size: 25px;
+        }
 }
